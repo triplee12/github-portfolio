@@ -25,3 +25,7 @@ Implement a Web App using GitHub API to fetch your GitHub repositories portfolio
 - Good Layout, UI, and Designs are essential. Accessibility techniques taught in semester one are Important. 10mks
 
 BONUS: Provide a button to Create a new repo using a Modal, allow a way to update some details of the created repo, and finally add a way to delete the repo. Instructors Award of Recognition ????.
+
+## Read The Project Documentation
+
+Documentation Link: [https://github.com/triplee12/github-portfolio/tree/main/portfolio#readme](https://github.com/triplee12/github-portfolio/tree/main/portfolio#readme)

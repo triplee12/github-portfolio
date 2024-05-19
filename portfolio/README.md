@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# GitHub Repositories Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application that allows users to view, search, create, update, and delete repositories on their GitHub account. It uses the GitHub API to fetch repository data and React for the front-end interface. The application features pagination, search, and modals for creating and updating repositories. Additionally, it includes error handling with error boundaries and a 404 page for unmatched routes.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **View Repositories**: List all repositories of a user with pagination.
+- **Search Repositories**: Search through the user's repositories.
+- **Create Repository**: Create a new repository using a modal form.
+- **Update Repository**: Update repository details using a modal form.
+- **Delete Repository**: Delete a repository.
+- **Error Handling**: Display a custom error boundary page and a 404 page for unmatched routes.
+- **Good UI/UX**: A clean, responsive, and accessible user interface.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get a local copy up and running, follow these simple steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (>= 14.x)
+- npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation Steps
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```sh
+    git clone https://github.com/triplee12/github-portfolio.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navigate to the project directory:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```sh
+    cd github-portfolio
+    ```
 
-### `npm run eject`
+3. **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Using npm:
+    ```sh
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Using yarn:
+    ```sh
+    yarn install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Create a `.env` file in the root directory and add your GitHub API token:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```
+    REACT_APP_GITHUB_TOKEN=your_github_token_here
+    ```
 
-## Learn More
+5. **Start the development server:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Using npm:
+    ```sh
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Using yarn:
+    ```sh
+    yarn start
+    ```
 
-### Code Splitting
+6. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. **View Repositories:**
+   - On the home page, you can see a list of your repositories.
+   - Use the pagination buttons to navigate through pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Search Repositories:**
+   - Use the search input to filter repositories by name.
 
-### Making a Progressive Web App
+3. **Create Repository:**
+   - Click on the "Create New Repository" button to open a modal form.
+   - Fill in the repository details and submit.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Update Repository:**
+   - Click the "Edit" button next to a repository to open a modal form.
+   - Update the repository details and submit.
 
-### Advanced Configuration
+5. **Delete Repository:**
+   - Click the "Delete" button next to a repository to remove it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Structure
 
-### Deployment
+- **`src/components`**: Contains reusable components like `RepoModal`.
+- **`src/pages`**: Contains page components like `Home` and `RepoDetail`.
+- **`src/App.jsx`**: Main application component with routes.
+- **`src/index.js`**: Entry point of the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Error Handling
 
-### `npm run build` fails to minify
+- **Error Boundary**: Wraps the main application to catch and display errors gracefully.
+- **404 Page**: Displays a custom 404 page for unmatched routes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Ejie Ebuka - [@TripleeO](https://twitter.com/TripleeO)
+
+Project Link: [https://github.com/triplee12/github-portfolio](https://github.com/triplee12/github-portfolio)
+
+---
